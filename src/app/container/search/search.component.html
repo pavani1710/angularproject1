@@ -1,0 +1,14 @@
+<div class="ekart--search--product">
+    <!-- in the below input tag we have done two way databinding using property binding and event binding  -->
+    <!-- <input class= "ekart-search-product-input" [value]="searchText" (input)="updateSearchText($event)">  -->
+    <!-- by using ngModule we can do two way databinding without using event and property binding  -->
+    <input class= "ekart-search-product-input"  [(ngModel)]="searchText"/>
+    
+    <button class="btn btn-search">Search</button>
+</div>
+     
+<div class="ekart-search-result-for">
+    <p *ngIf="searchText != '' "><strong>Search result for : </strong> {{searchText}} </p>
+</div> 
+     
+    

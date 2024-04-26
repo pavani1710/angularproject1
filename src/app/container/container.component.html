@@ -1,0 +1,26 @@
+<div class="ekart--product--container"> 
+<!-- <img [src]="product.pImage"/> 
+<p > Name : {{product.name}}</p>
+<p >Price : ${{product.price}}</p>
+<p>Color : {{product.color}}</p>
+<p> Discounted Price : {{product.price-(product.price*product.discount1/ 100)}}</p>
+<p> Discounted price : {{ getDiscountedPrice().toFixed(1)}}</p>
+<p> {{product.inStock > 0 ? 'Only '+ product.inStock + " Left": 'No Stock Available'}}</p>
+<button [disabled] ="!(product.inStock >0 )">Buy Now </button> 
+instead of using [value]="name1" we can wirte as below represented both are property binding 
+<input type="text" class="" bind-value="name1"/> 
+<input [value]="name1" (input)="onNameChange($event)" /> 
+<p>Name:{{name1}}</p>
+<button (click)="decrementCartValue()">-</button>
+<span>{{addToCart}}</span>
+<button (click)="incrementCartValue()">+</button>  -->
+<app-search></app-search>
+<!-- <div *ngFor = "let item of [1,2,3,4,5]"> 
+    <p>Current Element of array is: {{item}}</p>-->
+<!-- <div *ngFor = "let item of listOfString"> 
+    <p>Current Element of array is: {{item}}</p>
+</div>-->
+<product-list></product-list>
+</div>
+
+
